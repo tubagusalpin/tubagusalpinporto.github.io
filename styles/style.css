@@ -1,0 +1,195 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.main-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+/* HERO */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.hero-name span {
+  color: #2563eb;
+}
+
+.hero-right img {
+  width: 300px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.pre-title {
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* GRID */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.service, .portfolio {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service h4,
+.portfolio h4 {
+  margin: 10px 0;
+}
+
+.portfolio-cover img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.portfolio-tags {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.portfolio-tags div {
+  background: #e0e7ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.skills-list {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.skills-list ul {
+  list-style: none;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
+
+/* CONTACT */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #111827;
+  color: white;
+  margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
